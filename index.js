@@ -1,7 +1,7 @@
-const _ = require("lodash");
+import { each } from "lodash";
 
 const numbers = [23, 4, 55, 23, 565, 77, 3];
 
-_.each(numbers, (number, i) => {
+each(numbers, (number, i) => {
   console.log(number);
 });

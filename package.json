@@ -4,7 +4,12 @@
   "description": "npm basics app",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "babel-node index.js"
+  },
+  "babel": {
+    "presets": [
+      "latest"
+    ]
   },
   "author": "Muhammad-Awwal Bankole",
   "license": "MIT",
@@ -12,6 +17,10 @@
     "lodash": "^4.17.11"
   },
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "babel-cli": "^6.26.0",
+    "babel-core": "*",
+    "babel-loader": "*",
+    "babel-preset-latest": "^6.24.1",
+    "babel-register": "*"
   }
 }
